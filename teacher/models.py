@@ -14,7 +14,8 @@ class Teacher(models.Model):
     teaachers_hobby = models.CharField(max_length=20)
     teachers_gender=models.CharField(max_length=20)
     
-
+    def __str__(self) -> str:
+        return f"{self.teachers_name} {self.teachers_age}"
 
 
 

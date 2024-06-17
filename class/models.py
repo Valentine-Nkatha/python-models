@@ -12,4 +12,7 @@ class Class(models.Model):
     class_description= models.TextField
     electricity = models.CharField(max_length=20)
     class_attendance=models.PositiveSmallIntegerField
+
+    def __str__(self) -> str:
+        return f"{self.class_name} {self.class_lecturer}"
     
